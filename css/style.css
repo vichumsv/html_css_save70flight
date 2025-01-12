@@ -483,6 +483,7 @@ input[type="checkbox"] {
   }
   .from_container {
     background: #002651;
+    border: none;
   }
   .form_gird {
     grid-template-columns: 1fr;
