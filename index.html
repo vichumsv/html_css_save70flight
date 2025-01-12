@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheap Flights - Save70.com</title>
+    <!-- Fav-Icon -->
+    <link rel="icon" type="image/png" href="images/favicon.gif" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="wid_100">
+    <div class="wid_100 main">
+      <!-- Header -->
+      <div class="header frame_padding">
+        <div class="logo">
+          <img src="images/logo.png" alt="Save70 logo" />
+        </div>
+        <div class="menu_container">
+          <a href="#" class="menu">Flights</a>
+          <a href="#" class="menu">Stays</a>
+          <a href="#" class="menu">Car Rentals</a>
+          <a href="#" class="menu">Cruises</a>
+        </div>
+        <div class="menu_icon"><i class="fa-solid fa-bars"></i></div>
+      </div>
+      <!-- Container -->
+      <div class="wid_100 container">
+        <!-- Form -->
+        <div class="form_background sec_mar_bot">
+          <div class="from_container">
+            <h1 class="form_title form_mar_bot">Flight Search</h1>
+            <form id="flight_search">
+              <div class="trip_container form_mar_bot">
+                <input type="radio" name="trip" id="f_round" />
+                <label class="radio_lable selected">
+                  <span class="radio_design"></span>
+                  <span class="radio_text">Round Trip</span>
+                </label>
+                <input type="radio" name="trip" id="f_one" />
+                <label class="radio_lable">
+                  <span class="radio_design"></span>
+                  <span class="radio_text">One-Way</span>
+                </label>
+              </div>
+              <div class="details_container form_mar_bot">
+                <div class="from_to form_gird">
+                  <div class="from">
+                    <label>From</label>
+                    <input
+                      type="text"
+                      placeholder="Origin name or code"
+                      value="Chennai, India (MAA)"
+                    />
+                  </div>
+                  <div class="to">
+                    <label>To</label>
+                    <input type="text" placeholder="Destination name or code" />
+                  </div>
+                </div>
+
+                <div class="depart_ret form_gird">
+                  <div class="depart_container form_sub_grid">
+                    <div class="depart">
+                      <label>Depart</label>
+                      <input
+                        type="date"
+                        name="cal"
+                        id="d_calendar"
+                        class="f_calendar"
+                      />
+                    </div>
+                    <div class="time">
+                      <select
+                        name="d_time"
+                        id="d_time"
+                        title="Select your time"
+                      >
+                        <option value="">Anytime</option>
+                        <option value="">12:00 AM</option>
+                        <option value="">1:00 AM</option>
+                        <option value="">2:00 AM</option>
+                        <option value="">3:00 AM</option>
+                        <option value="">4:00 AM</option>
+                        <option value="">5:00 AM</option>
+                        <option value="">6:00 AM</option>
+                        <option value="">7:00 AM</option>
+                        <option value="">8:00 AM</option>
+                        <option value="">9:00 AM</option>
+                        <option value="">10:00 AM</option>
+                        <option value="">11:00 AM</option>
+                        <option value="">12:00 PM</option>
+                        <option value="">1:00 PM</option>
+                        <option value="">2:00 PM</option>
+                        <option value="">3:00 PM</option>
+                        <option value="">4:00 PM</option>
+                        <option value="">5:00 PM</option>
+                        <option value="">6:00 PM</option>
+                        <option value="">7:00 PM</option>
+                        <option value="">8:00 PM</option>
+                        <option value="">9:00 PM</option>
+                        <option value="">10:00 PM</option>
+                        <option value="">11:00 PM</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="return_container form_sub_grid">
+                    <div class="return">
+                      <label>Return</label>
+                      <input
+                        type="date"
+                        name="cal"
+                        id="r_calendar"
+                        class="f_calendar"
+                      />
+                    </div>
+                    <div class="time">
+                      <select
+                        name="r_time"
+                        id="r_time"
+                        title="Select your time"
+                      >
+                        <option value="">Anytime</option>
+                        <option value="">12:00 AM</option>
+                        <option value="">1:00 AM</option>
+                        <option value="">2:00 AM</option>
+                        <option value="">3:00 AM</option>
+                        <option value="">4:00 AM</option>
+                        <option value="">5:00 AM</option>
+                        <option value="">6:00 AM</option>
+                        <option value="">7:00 AM</option>
+                        <option value="">8:00 AM</option>
+                        <option value="">9:00 AM</option>
+                        <option value="">10:00 AM</option>
+                        <option value="">11:00 AM</option>
+                        <option value="">12:00 PM</option>
+                        <option value="">1:00 PM</option>
+                        <option value="">2:00 PM</option>
+                        <option value="">3:00 PM</option>
+                        <option value="">4:00 PM</option>
+                        <option value="">5:00 PM</option>
+                        <option value="">6:00 PM</option>
+                        <option value="">7:00 PM</option>
+                        <option value="">8:00 PM</option>
+                        <option value="">9:00 PM</option>
+                        <option value="">10:00 PM</option>
+                        <option value="">11:00 PM</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="travel_class_prefer form_gird">
+                  <div class="form_sub_grid">
+                    <div class="travelers_conteiner">
+                      <label>Travelers</label>
+                      <select
+                        name="travelers"
+                        id="travelers"
+                        title="Select number of travelers"
+                      >
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                      </select>
+                    </div>
+                    <div class="class_type_container">
+                      <label>Class</label>
+                      <select
+                        name="class_type"
+                        id="class_type"
+                        title="Select your class"
+                      >
+                        <option value="">Economy</option>
+                        <option value="">Business</option>
+                        <option value="">First</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="prefer_check_container">
+                    <span id="prefer" class="check_box"></span>
+                    <span class="check_text">Prefer Non-Stop Flights</span>
+                  </div>
+                </div>
+
+                <div class="btn_container form_gird">
+                  <div class="form_sub_grid">
+                    <button id="f-search" class="search_btn">SEARCH</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="flight_customer_care">
+              <p>Get great flight rates from our experts 24/7</p>
+              <div class="flight_contact">
+                <div class="phone_img">
+                  <img src="images/phone_white.png" alt="Phone" />
+                </div>
+                <div class="phone_num">
+                  <p>Toll Free USA/CA +1-855-484-4315</p>
+                  <p>International +1-858-492-7547</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--A few things to Consider-->
+        <div class="things_container frame_padding sec_mar_bot">
+          <div class="things_title">
+            A few <span class="things_clr_1">things to</span>
+            <span class="things_clr_2">consider</span> before booking a flight
+          </div>
+          <p>
+            Fuel costs are constantly fluctuating, which can make budgeting for
+            a trip a bit difficult. Another budgeting challenge to consider is
+            all those extra fees that airlines have started tacking onto their
+            services. But don't let these industry trends discourage you from
+            traveling the world and seeing its beauty for yourself! Since you
+            can't drive to all your dream destinations, flying is the only way
+            to go sometimes and, undeniably, the fastest. Luckily, there are
+            plenty of ways to find the most affordable fares and also avoid
+            paying as many extra charges as possible when you plan ahead.
+          </p>
+        </div>
+        <!-- Tips Section-->
+        <div class="tips_container sec_mar_bot">
+          <div class="tips_col">
+            <div class="tip_box">
+              <div class="tip_title">
+                Airlines put out their fare sales on Tuesday morning.
+              </div>
+              <div class="tip_text">
+                Airlines put out their fare sales on Tuesday morning, making
+                this day the best day to book a flight for less.
+              </div>
+            </div>
+            <div class="tip_box">
+              <div class="tip_title">
+                Don't wait until the last-minute to book.
+              </div>
+              <div class="tip_text">
+                Many travelers don't know that there's a sweet spot for booking
+                and getting the best price on your tickets. Book too early or
+                too late and you could end up paying more than you need to.
+              </div>
+            </div>
+            <div class="tip_box">
+              <div class="tip_title">Avoid the upgrade it's not necessary.</div>
+              <div class="tip_text">
+                Sometimes upgrades are free, but mostly you will be charged for
+                seeking a last-minute bump to first class, and the cost can be
+                hefty.
+              </div>
+            </div>
+          </div>
+          <div class="tips_col">
+            <div class="tip_box">
+              <div class="tip_title">Fly during the least popular times.</div>
+              <div class="tip_text">
+                Tuesday, Wednesday and Saturday are the slowest days to fly,
+                which means cheaper deals than the rest of the week. You can
+                also find reduced rates on early morning flights, since many
+                people don't like to get up before the sun to get to the
+                airport. Earlier boarding times can also considerably cut down
+                your chances of getting bumped on an overbooked flight or
+                delayed because of other delayed flights or mechanical issues.
+              </div>
+            </div>
+            <div class="tip_box">
+              <div class="tip_title">Avoiding extra fees</div>
+              <div class="tip_text">
+                Airlines will charge for just about anything these days. Some
+                have even toyed around with charging customers for using the
+                restroom. All those extra fees can certainly add up, but there's
+                no reason to pay them if you don't have to. Here are some tips
+                to keep money in your wallet once you get to the airport.
+              </div>
+            </div>
+          </div>
+          <div class="tips_col">
+            <div class="tip_box">
+              <div class="tip_title">Choose your seat later.</div>
+              <div class="tip_text">
+                Some airlines charge you to pick your seat when you book online,
+                adding even more to the bottom line of your ticket cost. If you
+                show up early on your travel day, you can still get suitable
+                seats. Some of the best seats get held back until flight day,
+                unless others are willing to pay extra for them ahead of time,
+                so you still have the chance at one of those.
+              </div>
+            </div>
+            <div class="tip_box">
+              <div class="tip_title">Pack your own snacks.</div>
+              <div class="tip_text">
+                Unless you're flying internationally, it's rare your flight
+                comes with a free meal. Snacks on the plane are not cheap and
+                almost never healthy. So don't rely on what's on the small menu
+                and instead tuck some of your own snacks – granola bars,
+                homemade muffins, nuts, quick snacks, fruit and trail mix all
+                make fantastic travel foods – into your bag and eat a lot
+                better, and cheaper, than other passengers.
+              </div>
+            </div>
+          </div>
+          <div class="tips_col">
+            <div class="tip_box">
+              <div class="tip_title">Fly on holidays.</div>
+              <div class="tip_text">
+                You already know that summer is the most expensive time to fly,
+                and even though most other times are more affordable, the days
+                surrounding holidays can be crazy. Save big if you're willing to
+                travel on major holidays, such as Thanksgiving and Christmas.
+              </div>
+            </div>
+            <div class="tip_box">
+              <div class="tip_title">
+                Fly carry-on only. Baggage fees vary wildly.
+              </div>
+              <div class="tip_text">
+                Almost all airlines charge them and charge big. Why pay for your
+                clothes to fly with you? If everyone in your travel party checks
+                a bag, your bill can be astronomical before you ever even get to
+                your destination. It's easy to reduce the amount of stuff you
+                pack: Make sure all your clothing coordinates, so you can take
+                less and still make more outfit combinations, take only two pair
+                of shoes, plan to do a bit of laundry on your trip and bring
+                only travel-sized toiletries.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Comparison Para -->
+        <div class="comparison_para frame_padding sec_mar_bot">
+          Comparison of flight prices can
+          <span class="c_p_save">save you</span> up to
+          <span class="c_p_percent">70%</span>
+          <a href="#" id="c_p_search">Search Now</a> to find the best prices!
+        </div>
+        <!-- Customer Care -->
+        <div class="flight_customer_care_final frame_padding sec_mar_bot">
+          <p>Get great flight rates from our experts 24/7</p>
+          <div class="flight_contact">
+            <div class="phone_img">
+              <img src="images/phone_orange.png" alt="Phone" />
+            </div>
+            <div class="phone_num">
+              <p>
+                <span class="orange_span_2">Toll Free USA/CA</span>
+                +1-855-484-4315
+              </p>
+              <p>
+                <span class="orange_span_2">International</span> +1-858-492-7547
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- About & Quick link section -->
+        <div class="about_main_container frame_padding">
+          <div class="about_link_con sec_mar_bot">
+            <div class="a_l_section">
+              <div class="sec_title">ABOUT SAVE70</div>
+              <div class="sec_content">
+                Save70 was founded by three friends with years of experience in
+                the online tourism field. We love to travel and to share our
+                insights with other vacation goers. After years of using tourism
+                websites, we noticed that often times it's possible to save a
+                lot of money with the help of efficient and thorough price
+                comparisons.
+              </div>
+            </div>
+            <div class="a_l_section">
+              <div class="sec_title">QUICK LINKS</div>
+              <div class="sec_content link_grid">
+                <a href="#">Flights</a>
+                <a href="#">About Us</a>
+                <a href="#">Stays</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Cruises</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Car Rentals</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Blog</a>
+              </div>
+            </div>
+          </div>
+
+          <p class="about_para">
+            save70.com is an online marketplace connecting consumers with
+            leading travel providers and agents. We provide travel information.
+            We do not provide quotes directly to consumers. save70.com does not
+            provide travel services nor are we a licensed travel provider.
+            save70.com matches consumers to reliable travel suppliers and travel
+            agents that can offer the best solution for their needs. The lowest
+            advertised rates are not necessarily always available on our site.
+            Rates and availabilities are subject to numerous factors, such as
+            limited time deals, seasonal price changes, location, etc.
+          </p>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="wid_100 footer frame_padding">
+        <div class="copy_right_container">
+          <div class="fb_icon">
+            <img src="images/icon_fb.png" alt="Facebook" />
+          </div>
+          <div class="copy_right">
+            Copyright &copy; 2025 Save70. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
