@@ -8,6 +8,7 @@
   --orange_color_1: #ff7800;
   --orange_color_2: #ff8623;
   --yellow_color: #ffd801;
+  --blue_menu: #004586;
   --blue_span: #2e97c4;
   --blue_title: #0087c0;
   --about_sec_bg: #005076;
@@ -33,6 +34,7 @@ body {
 
 /**** HEADER ****/
 .header {
+  position: relative;
   display: grid;
   grid-template-columns: 200px auto 50px;
   column-gap: 50px;
@@ -58,19 +60,86 @@ img {
   color: #000;
 }
 
+#menu_icon {
+  display: none;
+}
+
 .menu_icon {
   font-size: 30px;
-  color: #004586;
+  color: var(--blue_menu);
   text-align: center;
   cursor: pointer;
   display: none;
 }
 
+.menu_container_small_screen {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  z-index: 1;
+}
+
+.menu_container_small_screen a {
+  /* display: grid; */
+  grid-template-columns: 7px auto;
+  column-gap: 8px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--blue_menu);
+  cursor: pointer;
+  border-bottom: 1px solid var(--blue_menu);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 24px;
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+
+.header:has(> #menu_icon:checked) .menu_icon {
+  color: var(--orange_color_1);
+}
+
+#menu_icon:checked + .menu_container_small_screen a {
+  display: grid;
+}
+
+.menu_container_small_screen .menu_arrow {
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 7px solid var(--blue_menu);
+  margin-right: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu_container_small_screen a:first-child {
+  border-top: 1px solid var(--blue_menu);
+}
+
+.menu_container_small_screen a:hover {
+  background: #ddd;
+}
+
+.menu_container_small_screen a:nth-child(2) {
+  color: var(--orange_color_1);
+}
+
+.menu_container_small_screen a:nth-child(2) .menu_arrow {
+  border-left: 7px solid var(--orange_color_1);
+}
+
 .menu_container a:active,
 .menu_container a:hover,
 .menu_container a:first-child,
-.menu_icon:hover {
+.menu_icon:hover,
+.menu_container_small_screen a:hover {
   color: var(--orange_color_1);
+}
+
+.menu_container_small_screen a:hover .menu_arrow {
+  border-left: 7px solid var(--orange_color_1);
 }
 
 /**** Container ****/
