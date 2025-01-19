@@ -233,7 +233,7 @@ input[type="radio"] {
 }
 
 input[type],
-select {
+.select_tag {
   width: 100%;
   border: none;
   padding: 10px;
